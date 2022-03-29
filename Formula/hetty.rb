@@ -5,21 +5,21 @@
 class Hetty < Formula
   desc "An HTTP toolkit for security research."
   homepage "https://hetty.xyz"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dstotijn/hetty/releases/download/v0.6.0/hetty_0.6.0_macOS_arm64.tar.gz"
-      sha256 "57711ca4fd8b3d57f74e82495e0a1561f69c6eb6c450c6266a94de96bdc19891"
+      url "https://github.com/dstotijn/hetty/releases/download/v0.7.0/hetty_0.7.0_macOS_arm64.tar.gz"
+      sha256 "33b16f546e10abd971958d7b49b9d2dea2989d4f33f6d6b05109ae4fd7073d25"
 
       def install
         bin.install "hetty"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dstotijn/hetty/releases/download/v0.6.0/hetty_0.6.0_macOS_x86_64.tar.gz"
-      sha256 "3d217d64351c81ef5617946c0f74655ebe32432d3732aec1cf93d866354b7bb2"
+      url "https://github.com/dstotijn/hetty/releases/download/v0.7.0/hetty_0.7.0_macOS_x86_64.tar.gz"
+      sha256 "d8d1c6ce383c6c1e224c53b847e4690ec43c929e715aa5b286894adc3f2c9963"
 
       def install
         bin.install "hetty"
@@ -29,16 +29,16 @@ class Hetty < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dstotijn/hetty/releases/download/v0.6.0/hetty_0.6.0_Linux_arm64.tar.gz"
-      sha256 "28634b5d444a3d2e0b806da6605e81faa9f46b86d26158bea7a24caaf7404027"
+      url "https://github.com/dstotijn/hetty/releases/download/v0.7.0/hetty_0.7.0_Linux_arm64.tar.gz"
+      sha256 "312405eebffd560b9b36e1640f7ae87d62b41078fddf5962633d6d09fe08b925"
 
       def install
         bin.install "hetty"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dstotijn/hetty/releases/download/v0.6.0/hetty_0.6.0_Linux_x86_64.tar.gz"
-      sha256 "8775eec845f6ec1485ab7c19672a32b9fcfc26ce73b91729e9f0e97a81246299"
+      url "https://github.com/dstotijn/hetty/releases/download/v0.7.0/hetty_0.7.0_Linux_x86_64.tar.gz"
+      sha256 "1bf1501907beb25b550837813fa800b9a56532b0b447a617c133c07ddfbbc18d"
 
       def install
         bin.install "hetty"
